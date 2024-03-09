@@ -13,12 +13,13 @@
         <form method="POST" action="${pageContext.request.contextPath}/destroy">
             <input type="hidden" name="_token" value="${_token}" />
         </form>
+
         <script>
-        function confirmDestroy() { //Javascriptの部分
-            if(confirm("本当に削除してよろしいですか？")) {
-                document.forms[1].submit();   //Javascriptの部分
+            function confirmDestroy() {
+                if(confirm("本当に削除してよろしいですか？")) {
+                    document.forms[1].submit();
+                }
             }
-        }
         </script>
 
     </c:param>
